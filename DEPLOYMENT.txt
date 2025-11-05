@@ -1,0 +1,149 @@
+# DEPLOYMENT INSTRUCTIONS
+
+## 📦 BACKEND DEPLOYMENT (Render)
+
+### Step 1: Push to GitHub
+```bash
+cd portfolio-backend
+git init
+git add .
+git commit -m "Initial backend commit"
+git remote add origin YOUR_GITHUB_REPO_URL
+git push -u origin main
+```
+
+### Step 2: Deploy on Render
+1. Go to https://render.com
+2. Sign up/Login with GitHub
+3. Click "New +" → "Web Service"
+4. Connect your backend repository
+5. Configure:
+   - **Name**: portfolio-backend
+   - **Environment**: Node
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+   - **Instance Type**: Free
+
+### Step 3: Add Environment Variables
+In Render dashboard, add these environment variables:
+```
+MONGODB_URI=mongodb+srv://isackkibet97_db_user:bkQ4ZXh5BvJqqmcr@cluster0.yxscaxt.mongodb.net/portfolio?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=your_strong_jwt_secret_key_here
+NODE_ENV=production
+FRONTEND_URL=https://your-portfolio.vercel.app
+PORT=5000
+```
+
+### Step 4: Note Your Backend URL
+After deployment, copy your backend URL (e.g., `https://portfolio-backend-xxxx.onrender.com`)
+
+---
+
+## 🚀 FRONTEND DEPLOYMENT (Vercel)
+
+### Step 1: Push to GitHub
+```bash
+cd portfolio-frontend
+git init
+git add .
+git commit -m "Initial frontend commit"
+git remote add origin YOUR_GITHUB_REPO_URL
+git push -u origin main
+```
+
+### Step 2: Deploy on Vercel
+1. Go to https://vercel.com
+2. Sign up/Login with GitHub
+3. Click "Add New" → "Project"
+4. Import your frontend repository
+5. Configure:
+   - **Framework Preset**: Vite
+   - **Root Directory**: ./
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+
+### Step 3: Add Environment Variable
+In Vercel project settings → Environment Variables:
+```
+VITE_API_URL=https://your-backend-url.onrender.com/api
+```
+(Use the backend URL from Render Step 4)
+
+### Step 4: Deploy
+Click "Deploy" - Vercel will build and deploy automatically
+
+---
+
+## ✅ POST-DEPLOYMENT
+
+### Update Backend CORS
+1. After Vercel deployment, copy your Vercel URL
+2. Update FRONTEND_URL in Render environment variables
+3. Redeploy backend on Render
+
+### Test Your Deployment
+1. Visit your Vercel URL
+2. Test navigation
+3. Login to admin at `/admin/login`
+   - Username: admin
+   - Password: Admin123!
+4. Add projects
+5. Test contact form
+
+---
+
+## 🔄 FUTURE UPDATES
+
+### Backend Updates
+```bash
+git add .
+git commit -m "Update message"
+git push
+```
+Render will auto-deploy
+
+### Frontend Updates
+```bash
+git add .
+git commit -m "Update message"
+git push
+```
+Vercel will auto-deploy
+
+---
+
+## 🆘 TROUBLESHOOTING
+
+### Backend Issues
+- Check Render logs for errors
+- Verify all environment variables are set
+- Ensure MongoDB Atlas allows connections from anywhere (0.0.0.0/0)
+
+### Frontend Issues
+- Check browser console for errors
+- Verify VITE_API_URL is correct
+- Clear browser cache
+- Check Vercel build logs
+
+### CORS Errors
+- Update FRONTEND_URL in Render
+- Redeploy backend
+- Wait 2-3 minutes for changes to apply
+
+---
+
+## 📝 IMPORTANT NOTES
+
+1. **Free Tier Limitations**:
+   - Render: May sleep after 15 min inactivity (first request takes 30s)
+   - Vercel: Unlimited bandwidth for hobby tier
+
+2. **Database**: MongoDB Atlas is already cloud-based ✅
+
+3. **File Uploads**: Render's free tier storage is ephemeral
+   - Consider using Cloudinary/AWS S3 for production images
+
+4. **Security**:
+   - Change JWT_SECRET to a strong random string
+   - Never commit .env files
+   - Use environment variables for all secrets
