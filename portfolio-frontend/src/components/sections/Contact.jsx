@@ -81,7 +81,7 @@ const Contact = () => {
                 <div className="contact-icon">📍</div>
                 <div>
                   <h4>Location</h4>
-                  <p>Kenya</p>
+                  <p>Nairobi, Kenya</p>
                 </div>
               </div>
             </div>
