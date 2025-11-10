@@ -17,8 +17,8 @@ const About = () => {
           <div className="about-text">
             <h3>My Journey</h3>
             <p>
-              I am a Fullstack software developer with 2+ years experience in both Web and Native App development. 
-              My secondary skill is UI/UX Designer.
+              I am a Fullstack software developer with 2+ years experience in both Web and Native App development, 
+              specializing in UI/UX Design.
             </p>
             <p>
               I strive to build awesome web and mobile applications, with great functionality through carefully 
