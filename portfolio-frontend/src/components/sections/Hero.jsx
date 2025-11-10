@@ -36,11 +36,11 @@ const Hero = () => {
             Isack <span className="text-accent">Kibet</span>
           </motion.h1>
           <motion.h2 className="hero-title">
-            Self-Taught Full-Stack Developer
+            Full-Stack Software Developer | UI/UX Designer
           </motion.h2>
           <motion.p className="hero-description">
-            Building beautiful, functional web applications with modern technologies.
-            Passionate about clean code, user experience, and continuous learning.
+            5+ years of experience building awesome web and mobile applications with 
+            great functionality through carefully crafted code and user-centric design.
           </motion.p>
           
           <motion.div className="hero-buttons" variants={itemVariants}>

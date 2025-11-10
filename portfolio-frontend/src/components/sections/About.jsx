@@ -17,33 +17,33 @@ const About = () => {
           <div className="about-text">
             <h3>My Journey</h3>
             <p>
-              I'm a self-taught full-stack developer with a passion for creating elegant 
-              solutions to complex problems. My journey into programming started with curiosity 
-              and has evolved into a deep commitment to building meaningful digital experiences.
+              I am a Fullstack software developer with 5+ years experience in both Web and Native App development. 
+              My secondary skill is UI/UX Designer.
             </p>
             <p>
-              Through countless hours of learning, building projects, and overcoming challenges, 
-              I've developed a strong foundation in modern web technologies. I believe in 
-              continuous learning and staying up-to-date with the latest industry trends.
+              I strive to build awesome web and mobile applications, with great functionality through carefully 
+              crafted code and user-centric design. I am focused on dependable development, safety-critical 
+              development, real-time data sync in development, and high-performance development.
             </p>
             <p>
-              When I'm not coding, you'll find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community.
+              Through continuous learning and hands-on experience, I've developed a strong foundation in modern 
+              technologies and best practices. I believe in creating solutions that not only work well but also 
+              provide exceptional user experiences.
             </p>
           </div>
           
           <div className="about-highlights">
             <div className="highlight-item">
-              <div className="highlight-number">3+</div>
-              <div className="highlight-label">Years Learning</div>
+              <div className="highlight-number">5+</div>
+              <div className="highlight-label">Years Experience</div>
             </div>
             <div className="highlight-item">
-              <div className="highlight-number">20+</div>
-              <div className="highlight-label">Projects Built</div>
+              <div className="highlight-number">50+</div>
+              <div className="highlight-label">Projects Completed</div>
             </div>
             <div className="highlight-item">
-              <div className="highlight-number">100%</div>
-              <div className="highlight-label">Self-Taught</div>
+              <div className="highlight-number">Web & Mobile</div>
+              <div className="highlight-label">Full-Stack Dev</div>
             </div>
           </div>
         </div>
