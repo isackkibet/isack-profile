@@ -9,6 +9,8 @@
   text-align: center;
   margin-bottom: var(--spacing-3xl);
   position: relative;
+  color: var(--color-text-primary);
+  letter-spacing: -0.5px;
 }
 
 .section-title::after {
@@ -34,13 +36,16 @@
   font-size: var(--font-size-2xl);
   color: var(--color-accent);
   margin-bottom: var(--spacing-md);
+  font-weight: 700;
 }
 
 .about-text p {
   font-size: var(--font-size-lg);
-  color: var(--color-text-secondary);
-  line-height: 1.8;
-  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+  line-height: 1.9;
+  margin-bottom: var(--spacing-lg);
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
 .about-highlights {
@@ -92,7 +97,9 @@
   }
   
   .about-text p {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
   }
   
   .about-highlights {
