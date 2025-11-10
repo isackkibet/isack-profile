@@ -47,12 +47,10 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container navbar-content">
-        <Link to="/" className="logo">
-          <span className="logo-text">Isack</span>
-          <span className="logo-accent">Kibet</span>
-        </Link>
-
         <div className="nav-links">
+          <Link to="/" className="logo-link">
+            <span className="logo-text">Isack Kibet</span>
+          </Link>
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
             Home
           </Link>

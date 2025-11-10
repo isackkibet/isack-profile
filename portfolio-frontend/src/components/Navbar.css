@@ -13,23 +13,19 @@
 
 .navbar-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.logo {
-  font-size: var(--font-size-2xl);
-  font-weight: 700;
-  display: flex;
-  gap: 0.5rem;
+.logo-link {
+  text-decoration: none;
+  margin-right: var(--spacing-md);
 }
 
 .logo-text {
-  color: var(--color-text-primary);
-}
-
-.logo-accent {
   color: var(--color-accent);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
 }
 
 .nav-links {
@@ -109,8 +105,7 @@
   }
   
   .navbar-content {
-    flex-direction: column;
-    gap: var(--spacing-sm);
+    justify-content: center;
   }
   
   .nav-links {
@@ -120,8 +115,12 @@
     justify-content: center;
   }
   
-  .logo {
-    font-size: var(--font-size-xl);
+  .logo-link {
+    margin-right: var(--spacing-sm);
+  }
+  
+  .logo-text {
+    font-size: var(--font-size-lg);
   }
   
   .btn-logout {
