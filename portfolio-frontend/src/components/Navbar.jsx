@@ -65,13 +65,11 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('contact')} className="nav-link-btn">
             Contact
           </button>
-          {isAuthenticated ? (
+          {isAuthenticated && (
             <>
               <Link to="/admin/dashboard" className="admin-link">Dashboard</Link>
               <button onClick={handleLogout} className="btn-logout">Logout</button>
             </>
-          ) : (
-            <Link to="/admin/login" className="admin-link">Admin</Link>
           )}
         </div>
       </div>
