@@ -75,11 +75,41 @@
 }
 
 @media (max-width: 968px) {
+  .about {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+  
   .about-content {
     grid-template-columns: 1fr;
   }
   
+  .about-text h3 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .about-text p {
+    font-size: 0.95rem;
+  }
+  
   .about-highlights {
     flex-direction: row;
+    gap: var(--spacing-sm);
+  }
+  
+  .highlight-item {
+    padding: var(--spacing-md);
+    flex: 1;
+  }
+  
+  .highlight-number {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .highlight-label {
+    font-size: var(--font-size-sm);
   }
 }

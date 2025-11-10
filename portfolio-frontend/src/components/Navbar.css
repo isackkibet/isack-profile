@@ -101,35 +101,42 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: var(--spacing-sm) 0;
+    padding: var(--spacing-xs) 0;
   }
   
   .navbar-content {
     justify-content: center;
+    padding: 0 var(--spacing-xs);
   }
   
   .nav-links {
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-sm);
+    gap: var(--spacing-xs);
+    font-size: 0.8rem;
     flex-wrap: wrap;
     justify-content: center;
   }
   
   .logo-link {
-    margin-right: var(--spacing-sm);
+    margin-right: var(--spacing-xs);
   }
   
   .logo-text {
-    font-size: var(--font-size-lg);
+    font-size: 0.9rem;
   }
   
   .btn-logout {
-    padding: 0.4rem 1rem;
-    font-size: var(--font-size-sm);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
   }
   
   .header-actions {
-    flex-direction: column;
-    gap: var(--spacing-sm);
+    flex-direction: row;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+  }
+  
+  .nav-link-btn {
+    padding: 0.3rem 0;
+    font-size: 0.8rem;
   }
 }
