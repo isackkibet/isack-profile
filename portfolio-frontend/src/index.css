@@ -126,6 +126,12 @@ a:hover {
   padding: 0 var(--spacing-md);
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
 .text-accent {
   color: var(--color-accent);
 }

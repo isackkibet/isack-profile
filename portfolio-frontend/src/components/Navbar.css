@@ -104,12 +104,33 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .navbar-content {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
   .nav-links {
     gap: var(--spacing-sm);
     font-size: var(--font-size-sm);
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .logo {
     font-size: var(--font-size-xl);
+  }
+  
+  .btn-logout {
+    padding: 0.4rem 1rem;
+    font-size: var(--font-size-sm);
+  }
+  
+  .header-actions {
+    flex-direction: column;
+    gap: var(--spacing-sm);
   }
 }

@@ -170,11 +170,34 @@
 }
 
 @media (max-width: 768px) {
+  .projects-page {
+    padding-top: 60px;
+  }
+  
+  .projects-header {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .projects-header h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .projects-header p {
+    font-size: var(--font-size-base);
+  }
+  
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
   }
   
   .filter-buttons {
-    padding: 0 var(--spacing-md);
+    padding: 0 var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+  
+  .filter-btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-sm);
   }
 }

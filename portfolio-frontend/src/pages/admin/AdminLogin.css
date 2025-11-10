@@ -93,3 +93,14 @@
 .login-footer a:hover {
   color: var(--color-accent);
 }
+
+@media (max-width: 768px) {
+  .login-card {
+    padding: var(--spacing-2xl);
+    margin: var(--spacing-md);
+  }
+  
+  .login-card h1 {
+    font-size: var(--font-size-2xl);
+  }
+}
