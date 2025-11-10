@@ -62,7 +62,7 @@ const Contact = () => {
             
             <div className="contact-details">
               <div className="contact-item">
-                <div className="contact-icon">📧</div>
+                <div className="contact-icon email-icon">📧</div>
                 <div>
                   <h4>Email</h4>
                   <p>isackkibet97@gmail.com</p>

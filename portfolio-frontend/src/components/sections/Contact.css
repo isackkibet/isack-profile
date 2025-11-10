@@ -52,6 +52,12 @@
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
+.email-icon {
+  background: linear-gradient(135deg, #EA4335 0%, #C5221F 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(234, 67, 53, 0.3);
+}
+
 .contact-item h4 {
   font-size: var(--font-size-lg);
   color: var(--color-text-primary);
