@@ -1,12 +1,15 @@
 import './Footer.css';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
     <footer className="footer">
       <div className="container footer-content">
-        <p>© {currentYear} Designed by <span className="text-accent">Isack Kibet</span></p>
+        <p>
+          Designed and Developed by <span className="text-accent">Isack Kibet</span>
+        </p>
+        <p className="footer-tech">
+          Built with React and MUI | Hosted on Netlify | Icons by Iconify
+        </p>
       </div>
     </footer>
   );
