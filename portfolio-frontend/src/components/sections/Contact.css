@@ -46,6 +46,12 @@
   border-radius: var(--border-radius-md);
 }
 
+.whatsapp-icon {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
 .contact-item h4 {
   font-size: var(--font-size-lg);
   color: var(--color-text-primary);

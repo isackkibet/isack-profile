@@ -70,7 +70,7 @@ const Contact = () => {
               </div>
               
               <div className="contact-item">
-                <div className="contact-icon">📱</div>
+                <div className="contact-icon whatsapp-icon">💬</div>
                 <div>
                   <h4>WhatsApp</h4>
                   <p>+254 759 008 293</p>
