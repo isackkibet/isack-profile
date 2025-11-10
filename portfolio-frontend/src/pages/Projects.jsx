@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { getProjects } from '../services/portfolioService';
+import Footer from '../components/Footer';
 import './Projects.css';
 
 const Projects = () => {
@@ -133,6 +134,7 @@ const Projects = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

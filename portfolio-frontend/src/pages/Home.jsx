@@ -3,6 +3,7 @@ import About from '../components/sections/About';
 import Skills from '../components/sections/Skills';
 import FeaturedProjects from '../components/sections/FeaturedProjects';
 import Contact from '../components/sections/Contact';
+import Footer from '../components/Footer';
 import './Home.css';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Skills />
       <FeaturedProjects />
       <Contact />
+      <Footer />
     </div>
   );
 };
