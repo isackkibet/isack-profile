@@ -65,15 +65,15 @@ const Contact = () => {
                 <div className="contact-icon">📧</div>
                 <div>
                   <h4>Email</h4>
-                  <p>isackkibet@example.com</p>
+                  <p>isackkibet97@gmail.com</p>
                 </div>
               </div>
               
               <div className="contact-item">
                 <div className="contact-icon">📱</div>
                 <div>
-                  <h4>Phone</h4>
-                  <p>+254 XXX XXX XXX</p>
+                  <h4>WhatsApp</h4>
+                  <p>+254 759 008 293</p>
                 </div>
               </div>
               
@@ -83,6 +83,21 @@ const Contact = () => {
                   <h4>Location</h4>
                   <p>Kenya</p>
                 </div>
+              </div>
+            </div>
+            
+            <div className="social-links">
+              <h4>Connect With Me</h4>
+              <div className="social-icons">
+                <a href="https://github.com/isackkibet" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <span>GitHub</span>
+                </a>
+                <a href="https://facebook.com/isack.kibet" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <span>Facebook</span>
+                </a>
+                <a href="https://wa.me/254759008293" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <span>WhatsApp</span>
+                </a>
               </div>
             </div>
           </div>
