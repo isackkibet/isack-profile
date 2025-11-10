@@ -17,7 +17,7 @@ const About = () => {
           <div className="about-text">
             <h3>My Journey</h3>
             <p>
-              I am a Fullstack software developer with 5+ years experience in both Web and Native App development. 
+              I am a Fullstack software developer with 2+ years experience in both Web and Native App development. 
               My secondary skill is UI/UX Designer.
             </p>
             <p>
@@ -34,11 +34,11 @@ const About = () => {
           
           <div className="about-highlights">
             <div className="highlight-item">
-              <div className="highlight-number">5+</div>
+              <div className="highlight-number">2+</div>
               <div className="highlight-label">Years Experience</div>
             </div>
             <div className="highlight-item">
-              <div className="highlight-number">50+</div>
+              <div className="highlight-number">10+</div>
               <div className="highlight-label">Projects Completed</div>
             </div>
             <div className="highlight-item">

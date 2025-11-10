@@ -39,7 +39,7 @@ const Hero = () => {
             Full-Stack Software Developer | UI/UX Designer
           </motion.h2>
           <motion.p className="hero-description">
-            5+ years of experience building awesome web and mobile applications with 
+            2+ years of experience building awesome web and mobile applications with 
             great functionality through carefully crafted code and user-centric design.
           </motion.p>
           
