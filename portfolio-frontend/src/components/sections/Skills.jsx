@@ -6,15 +6,15 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend',
-      skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Framer Motion']
+      skills: ['React', 'Angular', 'Vue', 'Ember', 'Gatsby']
     },
     {
       title: 'Backend',
-      skills: ['Node.js', 'Express', 'MongoDB', 'REST APIs', 'JWT', 'bcrypt']
+      skills: ['Django', 'Flask', 'PHP Laravel', 'Node Express', 'Go']
     },
     {
-      title: 'Tools & Others',
-      skills: ['Git', 'VS Code', 'Vite', 'npm', 'Postman', 'Chrome DevTools']
+      title: 'Mobile Development',
+      skills: ['React Native', 'Flutter', 'Expo']
     }
   ];
 
