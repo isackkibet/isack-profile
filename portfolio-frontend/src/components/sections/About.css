@@ -11,6 +11,8 @@
   position: relative;
   color: var(--color-text-primary);
   letter-spacing: -0.5px;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+  animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .section-title::after {
@@ -23,6 +25,12 @@
   height: 4px;
   background: var(--color-accent);
   border-radius: 2px;
+  box-shadow: 0 0 15px var(--color-accent);
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 0 10px rgba(0, 255, 136, 0.3); }
+  100% { text-shadow: 0 0 20px rgba(0, 255, 136, 0.6), 0 0 30px rgba(0, 255, 136, 0.4); }
 }
 
 .about-content {
