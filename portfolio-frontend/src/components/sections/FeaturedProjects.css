@@ -139,6 +139,13 @@
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .project-link::before {

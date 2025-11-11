@@ -97,6 +97,13 @@
   font-weight: 500;
   transition: all var(--transition-base);
   display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .social-icon:hover {
@@ -135,6 +142,11 @@
   font-family: inherit;
   font-size: var(--font-size-base);
   transition: all var(--transition-base);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .form-group input:focus,
@@ -172,6 +184,9 @@
   width: 100%;
   padding: var(--spacing-md);
   font-size: var(--font-size-lg);
+  min-height: 44px; /* Better tap target */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .submit-btn:disabled {
