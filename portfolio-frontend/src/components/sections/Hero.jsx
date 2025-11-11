@@ -62,6 +62,8 @@ const Hero = () => {
               <img 
                 src="/profile.jpg" 
                 alt="Isack Kibet" 
+                loading="eager"
+                decoding="async"
                 onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.parentElement.innerHTML = '<div class="profile-placeholder">IK</div>';
