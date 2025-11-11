@@ -31,6 +31,21 @@ const Hero = () => {
         animate="visible"
       >
         <motion.div className="hero-text" variants={itemVariants}>
+          <motion.div className="profile-photo-mobile">
+            <div className="profile-photo">
+              <img 
+                src="/profile.jpg" 
+                alt="Isack Kibet" 
+                loading="eager"
+                decoding="async"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.parentElement.innerHTML = '<div class="profile-placeholder">IK</div>';
+                }}
+              />
+            </div>
+          </motion.div>
+          
           <motion.p className="hero-greeting">Hi, I'm</motion.p>
           <motion.h1 className="hero-name">
             Isack <span className="text-accent">Kibet</span>

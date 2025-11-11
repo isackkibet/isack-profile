@@ -147,6 +147,24 @@
   background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-bg-secondary) 100%);
 }
 
+.profile-photo-mobile {
+  display: none;
+  margin-bottom: var(--spacing-lg);
+}
+
+.profile-photo-mobile .profile-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-width: 3px;
+}
+
+.profile-photo-mobile .profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .profile-glow {
   position: absolute;
   width: 400px;
@@ -268,6 +286,14 @@
     max-width: 280px;
     padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
+  }
+  
+  .profile-photo-mobile {
+    display: block;
+  }
+  
+  .hero-visual {
+    display: none;
   }
   
   .profile-photo-container {
