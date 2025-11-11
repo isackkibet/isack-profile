@@ -68,7 +68,8 @@ const FeaturedProjects = () => {
                 key={project._id}
                 className="project-card"
                 variants={itemVariants}
-                whileHover={{ y: -10 }}
+                whileHover={{ y: -10, rotateY: 5 }}
+                style={{ transformStyle: 'preserve-3d' }}
               >
                 <div className="project-image">
                   <img 
