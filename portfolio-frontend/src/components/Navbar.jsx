@@ -33,6 +33,16 @@ const Navbar = () => {
     }
   };
 
+  const downloadPDF = () => {
+    // Create a temporary link to download the PDF
+    const link = document.createElement('a');
+    link.href = '/portfolio.pdf'; // This should point to your actual PDF file
+    link.download = 'Isack_Kibet_Portfolio.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const isAdminRoute = location.pathname.startsWith('/admin');
 
   if (isAdminRoute && location.pathname !== '/admin/login') {
@@ -62,6 +72,9 @@ const Navbar = () => {
           </button>
           <button onClick={() => scrollToSection('contact')} className="nav-link-btn">
             Contact
+          </button>
+          <button onClick={downloadPDF} className="nav-link-btn download-btn">
+            Download PDF
           </button>
           {isAuthenticated && (
             <>

@@ -86,6 +86,19 @@
   color: var(--color-accent);
 }
 
+.download-btn {
+  color: var(--color-orange) !important;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  color: var(--color-orange-light) !important;
+}
+
+.download-btn::after {
+  background: var(--color-orange);
+}
+
 .nav-links a::after,
 .nav-link-btn::after {
   content: '';
