@@ -33,11 +33,11 @@ const Navbar = () => {
     }
   };
 
-  const downloadPDF = () => {
-    // Create a temporary link to download the PDF
+  const downloadResume = () => {
+    // Create a temporary link to download the resume
     const link = document.createElement('a');
-    link.href = '/portfolio.pdf'; // This should point to your actual PDF file
-    link.download = 'Isack_Kibet_Portfolio.pdf';
+    link.href = '/resume.pdf'; // This should point to your actual resume file
+    link.download = 'Isack_Kibet_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -73,8 +73,8 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('contact')} className="nav-link-btn">
             Contact
           </button>
-          <button onClick={downloadPDF} className="nav-link-btn download-btn">
-            Download PDF
+          <button onClick={downloadResume} className="nav-link-btn download-btn">
+            Resume
           </button>
           {isAuthenticated && (
             <>
