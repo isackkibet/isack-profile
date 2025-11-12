@@ -15,6 +15,10 @@ const Skills = () => {
     {
       title: 'Mobile Development',
       skills: ['React Native', 'Flutter', 'Expo']
+    },
+    {
+      title: 'IoT & Embedded',
+      skills: ['IoT', 'Arduino', 'Raspberry Pi', 'ESP32', 'MQTT']
     }
   ];
 
