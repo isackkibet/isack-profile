@@ -40,7 +40,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2 className="section-title">Skills & Tools</h2>
+        <h2 className="section-title">Skills & <span className="text-orange">Tools</span></h2>
         
         <motion.div 
           className="skills-grid"

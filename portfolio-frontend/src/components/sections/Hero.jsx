@@ -51,10 +51,10 @@ const Hero = () => {
             Isack <span className="text-accent">Kibet</span>
           </motion.h1>
           <motion.h2 className="hero-title">
-            Full-Stack Software Developer | UI/UX Designer
+            Full-Stack <span className="text-orange">Software Developer</span> | UI/UX Designer
           </motion.h2>
           <motion.p className="hero-description">
-            2+ years of experience building awesome web and mobile applications with 
+            2+ years of experience building <span className="text-orange">awesome</span> web and mobile applications with 
             great functionality through carefully crafted code and user-centric design.
           </motion.p>
           

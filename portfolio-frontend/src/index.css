@@ -21,6 +21,9 @@
   --color-accent: #00ff88;
   --color-accent-dark: #00cc6d;
   --color-accent-light: #66ffbb;
+  --color-orange: #ff7700;
+  --color-orange-dark: #cc5f00;
+  --color-orange-light: #ff9933;
   
   --color-error: #ff4444;
   --color-success: #00ff88;
@@ -218,6 +221,14 @@ button, a, input, textarea {
 
 .text-muted {
   color: var(--color-text-muted);
+}
+
+.text-orange {
+  color: var(--color-orange);
+}
+
+.text-orange:hover {
+  color: var(--color-orange-light);
 }
 
 /* Animations */

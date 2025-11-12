@@ -41,7 +41,7 @@ const FeaturedProjects = () => {
     return (
       <section id="projects" className="featured-projects">
         <div className="container">
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">Featured <span className="text-orange">Projects</span></h2>
           <div className="loading">Loading projects...</div>
         </div>
       </section>
@@ -51,7 +51,7 @@ const FeaturedProjects = () => {
   return (
     <section id="projects" className="featured-projects">
       <div className="container">
-        <h2 className="section-title">Featured Projects</h2>
+        <h2 className="section-title">Featured <span className="text-orange">Projects</span></h2>
         
         <motion.div 
           className="projects-grid"

@@ -21,9 +21,9 @@ const About = () => {
               specializing in UI/UX Design.
             </p>
             <p>
-              I strive to build awesome web and mobile applications, with great functionality through carefully 
-              crafted code and user-centric design. I am focused on dependable development, safety-critical 
-              development, real-time data sync in development, and high-performance development.
+              I strive to build <span className="text-orange">awesome</span> web and mobile applications, with great functionality through carefully 
+              crafted code and user-centric design. I am focused on <span className="text-orange">dependable</span> development, safety-critical 
+              development, real-time data sync in development, and <span className="text-orange">high-performance</span> development.
             </p>
             <p>
               Through continuous learning and hands-on experience, I've developed a strong foundation in modern 

@@ -39,7 +39,7 @@ const Projects = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            All Projects
+            All <span className="text-orange">Projects</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
