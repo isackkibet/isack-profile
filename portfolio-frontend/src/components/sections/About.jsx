@@ -15,7 +15,6 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-text">
-            <h3>About Me</h3>
             <p>
               A creative full-stack developer with 5+ years of experience adept at working both remotely and in-office.
             </p>
