@@ -16,7 +16,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              A creative full-stack developer with 5+ years of experience adept at working both remotely and in-office.
+              A creative full-stack developer with 3 years of experience adept at working both remotely and in-office.
             </p>
             <p>
               Since the beginning of my journey as a software developer, I've done remote work for agencies, 
@@ -45,11 +45,11 @@ const About = () => {
           
           <div className="about-highlights">
             <div className="highlight-item">
-              <div className="highlight-number">5+</div>
+              <div className="highlight-number">3</div>
               <div className="highlight-label">Years Experience</div>
             </div>
             <div className="highlight-item">
-              <div className="highlight-number">50+</div>
+              <div className="highlight-number">10</div>
               <div className="highlight-label">Projects Completed</div>
             </div>
             <div className="highlight-item">
