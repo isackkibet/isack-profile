@@ -15,30 +15,42 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-text">
-            <h3>My Journey</h3>
+            <h3>About Me</h3>
             <p>
-              I am a Fullstack software developer with 2+ years experience in both Web and Native App development, 
-              specializing in UI/UX Design.
+              A creative full-stack developer with 5+ years of experience adept at working both remotely and in-office.
             </p>
             <p>
-              I strive to build <span className="text-orange">awesome</span> web and mobile applications, with great functionality through carefully 
-              crafted code and user-centric design. I am focused on <span className="text-orange">dependable</span> development, safety-critical 
-              development, real-time data sync in development, and <span className="text-orange">high-performance</span> development.
+              Since the beginning of my journey as a software developer, I've done remote work for agencies, 
+              developed for startups, and collaborated with talents to create digital products for both business 
+              and consumer use.
             </p>
             <p>
-              Through continuous learning and hands-on experience, I've developed a strong foundation in modern 
-              technologies and best practices. I believe in creating solutions that not only work well but also 
-              provide exceptional user experiences.
+              <span className="text-orange">~ What I do</span>
+            </p>
+            <p>
+              <span className="text-orange">Websites & Webapps</span>
+            </p>
+            <p>
+              I develop back-end & front-end applications with React, Vue, Angular, Django, Node & GO
+            </p>
+            <p>
+              <span className="text-orange">Mobile Applications</span>
+            </p>
+            <p>
+              I do iOS and android app development with Flutter and React Native/Expo
+            </p>
+            <p>
+              <span className="text-orange">Tools & technologies</span>
             </p>
           </div>
           
           <div className="about-highlights">
             <div className="highlight-item">
-              <div className="highlight-number">2+</div>
+              <div className="highlight-number">5+</div>
               <div className="highlight-label">Years Experience</div>
             </div>
             <div className="highlight-item">
-              <div className="highlight-number">10+</div>
+              <div className="highlight-number">50+</div>
               <div className="highlight-label">Projects Completed</div>
             </div>
             <div className="highlight-item">
