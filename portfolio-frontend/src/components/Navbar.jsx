@@ -74,7 +74,7 @@ const Navbar = () => {
             Contact
           </button>
           <button onClick={downloadResume} className="nav-link-btn download-btn" title="Download my resume">
-            📄 Resume
+            📄 Download Resume
           </button>
           {isAuthenticated && (
             <>
