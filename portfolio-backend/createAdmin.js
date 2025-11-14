@@ -15,8 +15,6 @@ const createAdmin = async () => {
       console.log('⚠️  Admin already exists!');
       process.exit(0);
     }
-
-    // Create admin
     const admin = new Admin({
       username: 'admin',
       email: 'isackkibet@example.com',

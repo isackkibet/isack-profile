@@ -73,8 +73,8 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('contact')} className="nav-link-btn">
             Contact
           </button>
-          <button onClick={downloadResume} className="nav-link-btn download-btn">
-            Resume
+          <button onClick={downloadResume} className="nav-link-btn download-btn" title="Download my resume">
+            📄 Resume
           </button>
           {isAuthenticated && (
             <>
