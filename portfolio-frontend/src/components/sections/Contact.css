@@ -45,6 +45,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
+  font-family: var(--font-family-heading);
 }
 
 .section-title::after {
@@ -80,6 +81,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   letter-spacing: -0.3px;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+  position: relative;
+  display: inline-block;
 }
 
 .contact-info p {
@@ -157,6 +162,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
+  font-weight: 600;
 }
 
 .contact-item p {
@@ -182,6 +188,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
+  font-weight: 600;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .social-icons {

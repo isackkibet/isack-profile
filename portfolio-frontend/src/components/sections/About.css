@@ -37,7 +37,7 @@
 
 .section-title {
   font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-extrabold);
+  font-weight: 800;
   text-align: center;
   margin-bottom: var(--spacing-3xl);
   position: relative;
@@ -93,7 +93,7 @@
   font-size: var(--font-size-2xl);
   color: var(--color-accent);
   margin-bottom: var(--spacing-md);
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -101,6 +101,7 @@
   letter-spacing: -0.3px;
   position: relative;
   padding-bottom: var(--spacing-sm);
+  display: inline-block;
 }
 
 .about-text h3::after {

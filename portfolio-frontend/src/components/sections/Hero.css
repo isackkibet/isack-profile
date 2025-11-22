@@ -26,7 +26,11 @@
   font-size: var(--font-size-lg);
   color: var(--color-accent);
   margin-bottom: var(--spacing-sm);
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .hero-name {
@@ -34,13 +38,21 @@
   font-weight: 800;
   margin-bottom: var(--spacing-md);
   line-height: 1.1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.5px;
 }
 
 .hero-title {
   font-size: var(--font-size-2xl);
   color: var(--color-text-secondary);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--spacing-lg);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.3px;
 }
 
 .hero-description {
