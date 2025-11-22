@@ -21,12 +21,24 @@
   font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-sm);
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.5px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
 }
 
 .login-subtitle {
   text-align: center;
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-2xl);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .form-group {
@@ -38,6 +50,12 @@
   margin-bottom: var(--spacing-sm);
   color: var(--color-text-primary);
   font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .form-group input {
@@ -50,6 +68,10 @@
   font-family: inherit;
   font-size: var(--font-size-base);
   transition: all var(--transition-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
 }
 
 .form-group input:focus {
@@ -66,6 +88,12 @@
   color: var(--color-error);
   margin-bottom: var(--spacing-md);
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.1px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 3px rgba(255, 68, 68, 0.2);
 }
 
 .login-btn {
@@ -88,6 +116,12 @@
 .login-footer a {
   color: var(--color-text-secondary);
   transition: color var(--transition-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.1px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
 }
 
 .login-footer a:hover {

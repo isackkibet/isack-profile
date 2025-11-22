@@ -37,6 +37,11 @@
   font-size: var(--font-size-xl);
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.3px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
 }
 
 .nav-links {
@@ -58,6 +63,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .nav-link-btn {
@@ -78,6 +89,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .nav-links a:hover,
@@ -104,6 +121,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .download-btn:hover {

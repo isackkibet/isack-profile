@@ -14,11 +14,23 @@
   font-size: var(--font-size-base);
   margin: 0;
   margin-bottom: var(--spacing-xs);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .footer-tech {
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.1px;
+  font-feature-settings: "kern" 1;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
 }
 
 .footer-content .text-accent {
