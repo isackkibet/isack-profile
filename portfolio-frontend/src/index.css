@@ -13,27 +13,19 @@
   --color-bg-tertiary: #1a1a1a;
   --color-surface: #1f1f1f;
   --color-surface-hover: #2a2a2a;
-  
+
   --color-text-primary: #ffffff;
-  --color-text-secondary: #e0e0e0;
-  --color-text-muted: #a0a0a0;
-  
+  --color-text-secondary: #b3b3b3;
+  --color-text-muted: #666666;
+
   --color-accent: #00ff88;
   --color-accent-dark: #00cc6d;
   --color-accent-light: #66ffbb;
-  --color-orange: #ff7700;
-  --color-orange-dark: #cc5f00;
-  --color-orange-light: #ff9933;
-  
+
   --color-error: #ff4444;
   --color-success: #00ff88;
   --color-warning: #ffaa00;
-  
-  /* Professional Color Variants */
-  --color-professional-accent: #00d4ff;
-  --color-professional-dark: #001e3c;
-  --color-professional-light: #e6f7ff;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -42,51 +34,34 @@
   --spacing-xl: 3rem;
   --spacing-2xl: 4rem;
   --spacing-3xl: 6rem;
-  
+
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-family-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
   --font-size-5xl: 3rem;
-  
-  /* Professional Typography Scale */
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-extrabold: 800;
-  
+
   /* Effects */
-  --border-radius-sm: 0.25rem;
-  --border-radius-md: 0.375rem;
-  --border-radius-lg: 0.5rem;
-  --border-radius-xl: 0.75rem;
-  --border-radius-2xl: 1rem;
-  
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  --border-radius-sm: 0.375rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  --shadow-accent: 0 0 20px rgba(0, 255, 136, 0.15);
-  --shadow-professional: 0 5px 15px rgba(0, 0, 0, 0.2);
-  
-  /* Professional Gradients */
-  --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, var(--color-orange) 100%);
-  --gradient-professional: linear-gradient(135deg, var(--color-professional-accent) 0%, #00b8d4 100%);
-  --gradient-subtle: linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.8) 100%);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+  --shadow-accent: 0 0 20px rgba(0, 255, 136, 0.2);
 }
 
 html {
@@ -101,21 +76,12 @@ body {
   margin: 0;
   font-family: var(--font-family);
   font-size: var(--font-size-base);
-  line-height: 1.7;
+  line-height: 1.6;
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: transparent;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  font-feature-settings: "kern" 1;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.05);
-  font-weight: var(--font-weight-normal);
-  letter-spacing: -0.01em;
 }
 
 #root {
@@ -146,46 +112,20 @@ body {
   color: var(--color-bg-primary);
 }
 
-/* Professional Selection */
-::-moz-selection {
-  background-color: var(--color-accent);
-  color: var(--color-bg-primary);
-}
+
 
 /* Links */
 a {
   color: var(--color-accent);
   text-decoration: none;
-  transition: all var(--transition-base);
-  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-base);
 }
 
 a:hover {
   color: var(--color-accent-light);
-  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
 }
 
-/* Professional Links */
-.link-professional {
-  color: var(--color-professional-accent);
-  position: relative;
-  padding-bottom: 2px;
-}
 
-.link-professional::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--color-professional-accent);
-  transition: width var(--transition-base);
-}
-
-.link-professional:hover::after {
-  width: 100%;
-}
 
 /* Utility Classes */
 .container {
