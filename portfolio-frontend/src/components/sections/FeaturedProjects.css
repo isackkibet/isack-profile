@@ -71,6 +71,8 @@
   position: relative;
   color: var(--color-text-primary);
   letter-spacing: -0.5px;
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+  animation: titleGlow 2s ease-in-out infinite alternate;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

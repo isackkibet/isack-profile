@@ -88,6 +88,8 @@
   font-size: var(--font-size-5xl);
   font-weight: 800;
   margin-bottom: var(--spacing-md);
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+  animation: titleGlow 2s ease-in-out infinite alternate;
   position: relative;
   z-index: 1;
   -webkit-font-smoothing: antialiased;
@@ -113,6 +115,7 @@
   text-rendering: optimizeLegibility;
   letter-spacing: 0.3px;
   font-feature-settings: "kern" 1;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   max-width: 600px;
   margin: 0 auto var(--spacing-lg);
   line-height: 1.6;
