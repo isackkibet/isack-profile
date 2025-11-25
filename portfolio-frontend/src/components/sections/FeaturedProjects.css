@@ -71,16 +71,10 @@
   position: relative;
   color: var(--color-text-primary);
   letter-spacing: -0.5px;
-  text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
-  animation: titleGlow 2s ease-in-out infinite alternate;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-orange));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   display: inline-block;
   padding: 0 var(--spacing-md);
   font-family: var(--font-family-heading);
@@ -96,12 +90,6 @@
   height: 4px;
   background: var(--color-accent);
   border-radius: 2px;
-  box-shadow: 0 0 20px var(--color-accent);
-}
-
-@keyframes titleGlow {
-  0% { text-shadow: 0 0 15px rgba(0, 255, 136, 0.4); }
-  100% { text-shadow: 0 0 30px rgba(0, 255, 136, 0.8), 0 0 40px rgba(0, 255, 136, 0.6); }
 }
 
 @keyframes pulse {
@@ -155,62 +143,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
-  opacity: 0.3;
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  z-index: -1;
-}
-
-.project-card::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(135deg, var(--color-accent), #00ccff, var(--color-accent));
-  border-radius: calc(var(--border-radius-lg) + 2px);
-  z-index: -2;
-  opacity: 0;
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  filter: blur(10px);
-}
-
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, var(--color-accent), transparent);
-  opacity: 0.1;
-  transition: opacity 0.3s ease;
-  z-index: -1;
-}
-
-.project-card::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  background: linear-gradient(45deg, var(--color-accent), #00ccff, var(--color-accent));
-  border-radius: calc(var(--border-radius-lg) + 3px);
-  z-index: -2;
-  opacity: 0.2;
-  transition: opacity 0.3s ease;
-  filter: blur(8px);
-}
-
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background: linear-gradient(45deg, var(--color-accent), transparent);
   opacity: 0.1;
   transition: opacity 0.3s ease;
@@ -238,24 +170,6 @@
   transform: translateY(-15px) rotateY(8deg) rotateX(5deg) scale(1.02);
   backdrop-filter: blur(10px);
   z-index: 10;
-}
-
-.project-card:hover::before {
-  opacity: 0.5;
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.2) 0%, transparent 50%);
-}
-
-.project-card:hover::after {
-  opacity: 0.4;
-  transform: rotate(5deg);
-}
-
-.project-card:hover::before {
-  opacity: 0.2;
-}
-
-.project-card:hover::after {
-  opacity: 0.4;
 }
 
 .project-card:hover::before {
@@ -425,7 +339,6 @@
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
   color: var(--color-text-primary);
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -455,7 +368,6 @@
   color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: var(--spacing-md);
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

@@ -140,7 +140,6 @@
 }
 
 .filter-btn {
-  padding: var(--spacing-sm) var(--spacing-lg);
   background: var(--color-surface);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--color-text-primary);
@@ -159,18 +158,7 @@
   text-rendering: optimizeLegibility;
   letter-spacing: 0.2px;
   font-feature-settings: "kern" 1;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
-}
-
-.filter-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
+  /* Removed text-shadow for clearer text */
 }
 
 .filter-btn:hover,
@@ -178,12 +166,9 @@
   background: var(--color-accent);
   color: var(--color-bg-primary);
   border-color: var(--color-accent);
-  box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4), 0 0 15px rgba(0, 255, 136, 0.2);
+  /* Simplified box-shadow for cleaner look */
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
   transform: translateY(-3px) scale(1.05);
-}
-
-.filter-btn:hover::before {
-  left: 100%;
 }
 
 .projects-grid {
@@ -558,7 +543,7 @@
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
   color: var(--color-text-primary);
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  /* Removed text-shadow for clearer text */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -588,7 +573,7 @@
   color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: var(--spacing-md);
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
+  /* Removed text-shadow for clearer text */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

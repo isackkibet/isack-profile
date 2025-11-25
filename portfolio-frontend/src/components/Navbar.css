@@ -68,7 +68,6 @@
   text-rendering: optimizeLegibility;
   letter-spacing: 0.2px;
   font-feature-settings: "kern" 1;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .nav-link-btn {
@@ -94,7 +93,6 @@
   text-rendering: optimizeLegibility;
   letter-spacing: 0.2px;
   font-feature-settings: "kern" 1;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }
 
 .nav-links a:hover,
