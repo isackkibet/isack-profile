@@ -32,12 +32,12 @@
 }
 
 .section-title {
-  font-size: var(--font-size-4xl);
+  font-size: 3rem; /* Increased from var(--font-size-4xl) which is 2.5rem */
   font-weight: 800;
   text-align: center;
   margin-bottom: var(--spacing-3xl);
   position: relative;
-  color: var(--color-text-primary);
+  color: var(--color-accent); /* Changed from var(--color-text-primary) to accent color */
   letter-spacing: -0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,8 +66,8 @@
 }
 
 .contact-info h3 {
-  font-size: var(--font-size-2xl);
-  color: var(--color-accent);
+  font-size: 1.8rem; /* Increased from var(--font-size-2xl) which is 1.5rem */
+  color: var(--color-accent); /* Keeping accent color */
   margin-bottom: var(--spacing-md);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -412,5 +412,17 @@
   .form-group input,
   .form-group textarea {
     font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem; /* Increased from 1.8rem */
+    letter-spacing: -0.3px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.4rem; /* Increased from 1.25rem */
+    letter-spacing: -0.2px;
   }
 }

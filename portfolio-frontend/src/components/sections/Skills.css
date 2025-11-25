@@ -9,8 +9,8 @@
 
 .section-title {
   text-align: center;
-  font-size: var(--font-size-3xl);
-  color: var(--color-text-primary);
+  font-size: 3rem;
+  color: var(--color-accent);
   margin-bottom: var(--spacing-3xl);
   font-weight: 800;
   position: relative;
@@ -42,7 +42,7 @@
 }
 
 .category-title {
-  font-size: var(--font-size-2xl);
+  font-size: 1.8rem;
   color: var(--color-accent);
   margin-bottom: var(--spacing-lg);
   font-weight: 700;
@@ -88,5 +88,12 @@
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 2.2rem; /* Increased from 1.5rem */
+  }
+  
+  .category-title {
+    font-size: 1.4rem; /* Increased from 1.25rem */
   }
 }

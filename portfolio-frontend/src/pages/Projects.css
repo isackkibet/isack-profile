@@ -85,23 +85,19 @@
 }
 
 .projects-header h1 {
-  font-size: var(--font-size-5xl);
+  font-size: 3.5rem; /* Increased from 3rem */
   font-weight: 800;
+  text-align: center;
   margin-bottom: var(--spacing-md);
-  text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
-  animation: titleGlow 2s ease-in-out infinite alternate;
-  position: relative;
-  z-index: 1;
+  color: var(--color-accent); /* Changed from var(--color-text-primary) to accent color */
+  letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  letter-spacing: -1px;
   font-feature-settings: "kern" 1;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-orange));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  position: relative;
   display: inline-block;
+  padding: 0 var(--spacing-md);
   font-family: var(--font-family-heading);
 }
 
@@ -539,11 +535,10 @@
 }
 
 .project-title {
-  font-size: var(--font-size-xl);
+  font-size: 1.8rem; /* Increased from var(--font-size-xl) which is 1.25rem */
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-text-primary);
-  /* Removed text-shadow for clearer text */
+  color: var(--color-accent); /* Changed from var(--color-text-primary) to accent color */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -684,7 +679,7 @@
   }
   
   .projects-header h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem; /* Increased from 1.8rem */
     text-shadow: 0 0 5px rgba(0, 255, 136, 0.2);
     letter-spacing: -0.3px;
   }
@@ -719,7 +714,7 @@
   }
   
   .project-title {
-    font-size: 1.25rem;
+    font-size: 1.4rem; /* Increased from 1.25rem */
     letter-spacing: -0.2px;
   }
   
