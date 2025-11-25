@@ -36,32 +36,19 @@
 }
 
 .section-title {
-  font-size: var(--font-size-4xl);
+  font-size: 3rem; /* Increased size */
   font-weight: 800;
   text-align: center;
   margin-bottom: var(--spacing-3xl);
   position: relative;
-  color: var(--color-text-primary);
+  color: var(--color-accent); /* Changed to accent color */
   letter-spacing: -0.5px;
-  text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
-  animation: titleGlow 2s ease-in-out infinite alternate;
+  /* Removed text-shadow and animation for clearer visibility */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
   font-family: var(--font-family-heading);
-}
-
-.section-title::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: var(--gradient-accent);
-  border-radius: 2px;
 }
 
 .section-title::after {
@@ -74,12 +61,7 @@
   height: 4px;
   background: var(--color-accent);
   border-radius: 2px;
-  box-shadow: 0 0 20px var(--color-accent);
-}
-
-@keyframes titleGlow {
-  0% { text-shadow: 0 0 15px rgba(0, 255, 136, 0.4); }
-  100% { text-shadow: 0 0 30px rgba(0, 255, 136, 0.8), 0 0 40px rgba(0, 255, 136, 0.6); }
+  /* Removed box-shadow for cleaner look */
 }
 
 .about-content {
@@ -165,7 +147,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: var(--gradient-accent);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-orange)); /* Replaced undefined variable */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--transition-base);
@@ -221,7 +203,7 @@
   }
   
   .section-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem; /* Increased from 1.8rem */
     letter-spacing: -0.3px;
   }
   
