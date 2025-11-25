@@ -50,11 +50,10 @@ const Contact = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="section-title">Get In Touch</h2>
         
         <div className="contact-content">
           <div className="contact-info">
-            <h3>Let's Work Together</h3>
+
             <p>
               I'm always interested in hearing about new projects and opportunities. 
               Whether you have a question or just want to say hi, feel free to reach out!
